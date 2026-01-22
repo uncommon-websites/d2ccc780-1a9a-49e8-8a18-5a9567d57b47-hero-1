@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Breakfast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-courier {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body class="bg-black m-0 p-0 overflow-hidden h-screen w-screen">
+
+    <!-- Main Container -->
+    <div class="relative w-full h-full">
+        
+        <!-- Grid Background -->
+        <!-- Using gap-px with a lighter background color creates the grid lines -->
+        <div class="absolute inset-0 grid grid-cols-5 grid-rows-3 gap-px bg-[#161616]">
+            
+            <!-- Row 1 -->
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+
+            <!-- Row 2 -->
+            <div class="bg-[#050505]" style="border-color: #44403c"></div>
+            <div class="bg-[#1c1c1c]" style="background-color: #44403c"></div> <!-- Highlighted Cell -->
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+
+            <!-- Row 3 -->
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+            <div class="bg-[#050505]"></div>
+        </div>
+
+        <!-- Text Overlay -->
+        <div class="absolute bottom-0 left-0 p-6 sm:p-10 md:p-16 lg:p-20 z-10 max-w-4xl">
+            <h1 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-courier tracking-tighter leading-none mb-6">
+                Second Breakfast
+            </h1>
+            <p class="text-white text-lg sm:text-xl md:text-2xl font-courier mb-8" style="color: #44403c">
+                Vulnerable essays for founders on tech, grit, and the future of AI.
+            </p>
+            <div class="flex gap-4 pointer-events-auto">
+                <a href="#" class="px-8 py-3 font-courier text-white font-bold uppercase tracking-widest" style="background-color: #ea580c">
+                    Read Essays
+                </a>
+                <a href="#" class="px-8 py-3 font-courier text-white border border-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+                    Subscribe
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
